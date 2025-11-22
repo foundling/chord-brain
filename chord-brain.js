@@ -113,7 +113,7 @@ const App = function(root, data) {
 		const chordName = chordNames[index];
 		
 		return {
-			notes: data[chordName].filter((v,i) => i !== 0 && i !== 2)
+			notes: data[chordName].filter((v,i) => i == 1 || i == 2)
 			name: chordName
 		}
 	}
